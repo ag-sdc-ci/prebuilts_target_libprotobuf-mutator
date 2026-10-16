@@ -1,0 +1,6 @@
+shadow prebuilt repo: libprotobuf-mutator (target)
+  aur package: libprotobuf-mutator (PKGBUILD build, x86_64)
+  registry: arch/libprotobuf-mutator v14.0.0_r67-2, Forgejo ag-ci arch repo
+  api-level: 32 (branch 32-20261016)
+  layout: libprotobuf-mutator-*.pkg.tar.zst at root; extracted payload in tree; Android.bp providing libprotobuf-mutator, libprotobuf-mutator-text-format (host_supported: true)
+  date: 2026-10-16

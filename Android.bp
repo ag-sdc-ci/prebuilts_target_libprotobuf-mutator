@@ -1,0 +1,44 @@
+package {
+    default_applicable_licenses: ["external_libprotobuf-mutator_license"],
+}
+
+license {
+    name: "external_libprotobuf-mutator_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+cc_prebuilt_library_static {
+    name: "libprotobuf-mutator",
+    host_supported: true,
+    vendor_available: true,
+    product_available: true,
+    recovery_available: true,
+    export_include_dirs: [
+        ".",
+        "include",
+        "src",
+    ],
+    shared_libs: ["libprotobuf-cpp-full"],
+    srcs: ["lib64/libprotobuf-mutator.a"],
+}
+
+cc_prebuilt_library_static {
+    name: "libprotobuf-mutator-text-format",
+    host_supported: true,
+    vendor_available: true,
+    product_available: true,
+    recovery_available: true,
+    export_include_dirs: [
+        ".",
+        "include",
+        "src",
+    ],
+    shared_libs: ["libprotobuf-cpp-full"],
+    srcs: ["lib64/libprotobuf-mutator-text-format.a"],
+}
